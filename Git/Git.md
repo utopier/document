@@ -14,7 +14,52 @@
 
 ---
 
-## Summary
+## Cheat Sheet
+
+    git --version (버전확인)
+    git init . (현재 디렉토리 버전관리, .git 디렉토리 생성)
+
+    git remote add origin 원격저장소주소 (원격저장소와 연결)
+    git remote -v (원격저장소 주소 확인)
+
+    git status (Git 상태확인)
+    git add (Staging Area에 추가, git에서 관리하게 됨)
+    git commit -m/-am (버전생성, Repository로 저장)
+
+    git log --stat/-p/--all --graph --oneline (git logging)
+    git diff (버전 간 차이점)
+
+    git push
+    git push --set-upstream origin master (git push 했을때 기본적으로 올라갈 원격저장소)
+
+    git clone 원격저장소주소 mydir (원격저장소로부터 코드 가져와서 지역저장소 생성)
+
+    git pull (원격저장소로부터 코드 가져옴, git fetch;git merge origin/master, git fetch;git merge FETCH_HEAD)
+
+    git fetch (신중하게 pull하고 싶을때)
+
+- Branch & Conflict
+  git branch (브랜치 리스트 확인)
+  git branch 브랜치이름 (브랜치 생성)
+
+  git checkout 브랜치이름 (브랜치 변경)
+
+  git merge 브랜치 이름
+
+  git reset --hard 합병전 커밋 ID
+
+  git mergetool (외부 도구 이용해서 merge)
+
+- checkout
+  git checkout VersionID (HEAD가 해당 버전 가리킴)
+  git checkout master (HEAR가 AMSTER 가리킴, 최신버전)
+- reset
+  git reset --hard (마지막 버전 삭제)
+  git reset --hard VersionID (VersionID로 돌아감)
+- revert
+  git revert VersionID (되돌리기)
+- cherry-pick
+- rebase
 
 ---
 
