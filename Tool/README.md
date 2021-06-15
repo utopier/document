@@ -1,0 +1,10 @@
+- VSC
+- Chrome DevTool
+- Chrome Extension
+  - React DevTool
+  - Redux DevTool
+  - Apollo Client DevTool
+  - ColorPick Eyedropper
+- Postman
+- MySQL Workbench
+- Wireshark
